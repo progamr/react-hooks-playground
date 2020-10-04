@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 
 
 const App = () => {
@@ -23,6 +23,10 @@ const App = () => {
   // Ex 4 multi useState
   const [v1, setV1] = useState(1);
   const [v2, setV2] = useState(2);
+
+  useEffect(() => {
+      console.log('render');
+  }, []);
 
   return (
         <div>
